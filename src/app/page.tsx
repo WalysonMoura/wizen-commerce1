@@ -1,11 +1,11 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { Video } from "@/components/Video"
-import { ProductSlides } from "@/components/ProductComponents/ProductCarousel"
+import { Video } from "@/components/Video";
+import { ProductSlides } from "@/components/ProductComponents/ProductCarousel";
 
-import SliderBanners from "../components/sliderBanners"
-import { buttonVariants } from "../components/ui/button"
-import { siteConfig } from "../config/site"
+import SliderBanners from "../components/sliderBanners";
+import { buttonVariants } from "../components/ui/button";
+import { siteConfig } from "../config/site";
 
 export default function IndexPage() {
   return (
@@ -44,5 +44,5 @@ export default function IndexPage() {
         </Link>
       </div>
     </section>
-  )
+  );
 }

@@ -11,7 +11,6 @@ import { siteConfig } from '@/config/site';
 
 import { InformationBar } from '../InformationBar';
 
-
 export function Header() {
   const isMobile = useIsMobile();
 
