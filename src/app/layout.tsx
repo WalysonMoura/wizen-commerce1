@@ -11,6 +11,7 @@ import { ThemeProvider } from '../components/theme-provider';
 import { TailwindIndicator } from '../components/tailwind-indicator';
 import { Header } from '../components/header';
 import { ButtonWhatsapp } from '../components/ButtonWhatsapp';
+import { Typebot } from '../components/Typebot';
 import { siteConfig } from '../config/site';
 import { cn } from '../lib/utils';
 import { fontSans } from '../lib/fonts';
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="relative flex min-h-screen flex-col pb-10">
                 <Header />
                 <ButtonWhatsapp />
+                <Typebot />
                 <div className="flex-1">
                   {children}
                 </div>

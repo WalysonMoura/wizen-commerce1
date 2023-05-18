@@ -1,8 +1,8 @@
-import { getCurrentMonth } from "@/utils/getCurrentMonth"
+import { getCurrentMonth } from "@/utils/getCurrentMonth";
 
-export type SiteConfig = typeof siteConfig
+export type SiteConfig = typeof siteConfig;
 
-const currentMonth = getCurrentMonth()
+const currentMonth = getCurrentMonth();
 
 const categories = [
   {
@@ -10,7 +10,25 @@ const categories = [
     href: "/",
     image: "",
   },
-]
+];
+
+export const featuresBenefitsData = [
+  {
+    title: "Frete Grátis",
+    description: "Entrega gratuita para todo o Brasil.",
+    icon: "RiTruckLine",
+  },
+  {
+    title: "Pagamento Seguro",
+    description: "Opções de pagamento seguras e confiáveis.",
+    icon: "AiOutlineShoppingCart",
+  },
+  {
+    title: "Produtos de Qualidade",
+    description: "Garantia de produtos de alta qualidade.",
+    icon: "IoIosHeart",
+  },
+];
 
 export const siteConfig = {
   name: "Wizen Shop",
@@ -64,4 +82,4 @@ export const siteConfig = {
       href: "#",
     },
   ],
-}
+};

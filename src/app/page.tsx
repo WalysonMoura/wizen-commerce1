@@ -24,6 +24,8 @@ export default function IndexPage() {
       <Video />
       <ProductSlides />
 
+      <Style.AboutUs></Style.AboutUs>
+
       <div className="flex gap-4">
         <Link
           href={siteConfig.links.docs}
