@@ -20,11 +20,11 @@ export function CardProduct({ product }) {
 
         <Style.Stars>
           <div>
-            <FaStar size={10} color="#FFEF40"/>
-            <FaStar size={10} color="#FFEF40"/>
-            <FaStar size={10} color="#FFEF40"/>
-            <FaStar size={10} color="#FFEF40"/>
-            <FaStar size={10} color="#FFEF40"/>
+            <FaStar size={10} color="#FFEF40" />
+            <FaStar size={10} color="#FFEF40" />
+            <FaStar size={10} color="#FFEF40" />
+            <FaStar size={10} color="#FFEF40" />
+            <FaStar size={10} color="#FFEF40" />
           </div>
           <span>105</span>
         </Style.Stars>
