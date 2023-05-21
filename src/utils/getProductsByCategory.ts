@@ -1,6 +1,9 @@
-import { useQuery } from "@apollo/client";
+
 
 export const getProductsByCategory = (category) => {
+
+    const { data } = await getClient().query({ query });
+
   const { loading, error, data } = useQuery(GET_PRODUCTS_BY_CATEGORY, {
     variables: { category },
   });
