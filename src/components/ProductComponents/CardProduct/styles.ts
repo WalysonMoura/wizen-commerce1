@@ -13,6 +13,7 @@ export const CardProductContainer = styled.div`
   }
   margin-right: 20px;
 `;
+
 export const TitleProduct = styled.h2``;
 export const PriceProduct = styled.h3``;
 export const PriceContent = styled.div``;
