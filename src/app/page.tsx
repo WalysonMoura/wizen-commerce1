@@ -1,11 +1,16 @@
-import Link from "next/link";
+import Link from "next/link"
 
-import { Video } from "@/components/Video";
-import { ProductSlides } from "@/components/ProductComponents/ProductCarousel";
+import { Categories } from "@/components/Home/Categories"
+import { BestSellers } from "@/components/Home/Sections/BestSellers"
+import { PersonalizedOffers } from "@/components/Home/Sections/PersonalizedOffers"
+import { Promotions } from "@/components/Home/Sections/Promotions"
+import { StoreNews } from "@/components/Home/Sections/StoreNews"
+import { Video } from "@/components/Home/Video"
+import SliderBanners from "@/components/Home/sliderBanners"
+import * as Styles from "@/styles/pages/home"
 
-import SliderBanners from "../components/sliderBanners";
-import { buttonVariants } from "../components/ui/button";
-import { siteConfig } from "../config/site";
+import { buttonVariants } from "../components/ui/button"
+import { siteConfig } from "../config/site"
 
 export default function IndexPage() {
   return (
@@ -22,25 +27,16 @@ export default function IndexPage() {
         </p>
       </div>
 
-      <Style.Categories>
-        {categories.map((category, index) => (
-          <CategoryItem
-            key={index}
-            title={category.title}
-            link={category.href}
-            image={category.image}
-          />
-        ))}
-      </Style.Categories>
-      <Style.Sections>
+      <Categories />
+      <div>
         <BestSellers />
         <Promotions />
         <StoreNews />
         <PersonalizedOffers />
-      </Style.Sections>
-      <Style.AboutUs>
+      </div>
+      <Styles.AboutUs>
         <Video />
-      </Style.AboutUs>
+      </Styles.AboutUs>
 
       <div className="flex gap-4">
         <Link
@@ -60,8 +56,7 @@ export default function IndexPage() {
         >
           GitHub
         </Link>
-        {}
       </div>
     </section>
-  );
+  )
 }

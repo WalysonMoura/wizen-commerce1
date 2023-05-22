@@ -1,4 +1,6 @@
-import { Bubble } from "@typebot.io/react";
+"use client"
+
+import { Bubble } from "@typebot.io/react"
 
 export function Typebot() {
   return (
@@ -13,5 +15,5 @@ export function Typebot() {
         },
       }}
     />
-  );
+  )
 }

@@ -1,15 +1,23 @@
-"use client";
+"use client"
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react"
 
+import * as Styles from "./styles"
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay, Navigation, Pagination } from "swiper";
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
+import Link from "next/link"
+import { Autoplay, Navigation, Pagination } from "swiper"
 
-import { categories } from "@/config/site";
+import { categories } from "@/config/site"
+
+type CategoryItemProps = {
+  title: string
+  url: string
+  image: string
+}
 
 export function Categories() {
   return (
@@ -23,20 +31,20 @@ export function Categories() {
         <SwiperSlide key={index}>
           <CategoryItem
             title={category.title}
-            link={category.link}
+            url={category.url}
             image={category.image}
           />
         </SwiperSlide>
       ))}
     </Styles.CategoriesContainer>
-  );
+  )
 }
 
-function CategoryItem({ title, link, image }) {
+function CategoryItem({ title, url, image }: CategoryItemProps) {
   return (
     <Styles.CategoryItemContainer>
-      <Link href={link}>
-        <SlideImage
+      <Link href={url}>
+        <Styles.Imagecategory
           src={image}
           width={1000}
           height={1000}
@@ -44,5 +52,5 @@ function CategoryItem({ title, link, image }) {
         />
       </Link>
     </Styles.CategoryItemContainer>
-  );
+  )
 }

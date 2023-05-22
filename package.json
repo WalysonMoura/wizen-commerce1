@@ -17,6 +17,7 @@
     "@apollo/client": "^3.7.14",
     "@notionhq/client": "^2.2.5",
     "@radix-ui/react-avatar": "^1.0.2",
+    "@radix-ui/react-label": "^2.0.1",
     "@radix-ui/react-navigation-menu": "^1.1.2",
     "@radix-ui/react-popover": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.1",

@@ -1,23 +1,25 @@
-"use client";
+"use client"
 
-import { Settings2 } from "lucide-react";
-import { BiMenuAltLeft } from "react-icons/bi";
+import { Settings2 } from "lucide-react"
+import { BiMenuAltLeft } from "react-icons/bi"
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import * as Style from "./styles"
+
+import { siteConfig } from "@/config/site"
+import useIsMobile from "@/hooks/useIsMobile"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/components/ui/popover"
 
-import { siteConfig } from "@/config/site";
-import { MainNav } from "../main-nav";
-import useIsMobile from "@/hooks/useIsMobile";
+import { MainNav } from "../main-nav"
 
 export function MobileMenu() {
-  const isMobile = useIsMobile();
+  const isMobile = useIsMobile()
   return (
     <>
       <Popover>
@@ -40,7 +42,7 @@ export function MobileMenu() {
               <p className="text-sm text-muted-foreground">
                 Set the dimensions for the layer.
               </p>
-              <MainNav items={siteConfig.mainNav} isMobile={isMobile} />
+              <MainNav items={siteConfig.mainNav}  />
             </div>
 
             <div className="space-y-2">
@@ -94,5 +96,5 @@ export function MobileMenu() {
         </PopoverContent>
       </Popover>
     </>
-  );
+  )
 }

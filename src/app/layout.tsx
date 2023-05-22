@@ -1,20 +1,20 @@
-import "../styles/globals.css";
-import StyledJsxRegistry from "./registry";
-import { Metadata } from "next";
+import "../styles/globals.css"
+import { Metadata } from "next"
 
-import GoogleAnalytics from "@/components/molecules/GoogleAnalytics";
-import GoogleTagManager from "@/components/molecules/GoogleTagManager";
+import GoogleAnalytics from "@/components/molecules/GoogleAnalytics"
+import GoogleTagManager from "@/components/molecules/GoogleTagManager"
 
+import { ButtonWhatsapp } from "../components/ButtonWhatsapp"
+import { Typebot } from "../components/Typebot"
+import { Header } from "../components/header"
+import { TailwindIndicator } from "../components/tailwind-indicator"
 //import { QueryClient, QueryClientProvider } from 'react-query';
 
-import { ThemeProvider } from "../components/theme-provider";
-import { TailwindIndicator } from "../components/tailwind-indicator";
-import { Header } from "../components/header";
-import { ButtonWhatsapp } from "../components/ButtonWhatsapp";
-import { Typebot } from "../components/Typebot";
-import { siteConfig } from "../config/site";
-import { cn } from "../lib/utils";
-import { fontSans } from "../lib/fonts";
+import { ThemeProvider } from "../components/theme-provider"
+import { siteConfig } from "../config/site"
+import { fontSans } from "../lib/fonts"
+import { cn } from "../lib/utils"
+import StyledJsxRegistry from "./registry"
 
 export const metadata: Metadata = {
   title: {
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-};
+}
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 //const queryClient = new QueryClient();
@@ -69,5 +69,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </body>
       </html>
     </>
-  );
+  )
 }

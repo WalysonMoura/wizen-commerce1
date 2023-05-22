@@ -4,20 +4,20 @@ export type SiteConfig = typeof siteConfig;
 
 const currentMonth = getCurrentMonth();
 
-const categories = [
+export const categories = [
   {
     title: "Eletrônicos",
-    href: "/",
+    url: "/",
     image: "/images/categories/eletrônicos.png",
   },
   {
     title: "Pets",
-    href: "/",
+    url: "/",
     image: "/images/categories/eletrônicos.png",
   },
   {
     title: "Beleza",
-    href: "/",
+    url: "/",
     image: "/images/categories/eletrônicos.png",
   },
 ];

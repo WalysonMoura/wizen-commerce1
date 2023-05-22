@@ -1,28 +1,18 @@
 "use client"
 
-import Image from "next/image"
-import Link from "next/link"
 import { styled } from "styled-components"
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
-// Import Swiper styles
-import "swiper/css"
-import "swiper/css/pagination"
-import "swiper/css/navigation"
-import { Autoplay, Navigation, Pagination } from "swiper"
-
-import { siteConfig } from "@/config/site"
-
+import Image from "next/image"
 
 export const CategoriesContainer = styled(Swiper)`
-width: 100%;
-  height: 400px;`;
+  width: 100%;
+  height: 400px;
+`
 
 export const CategoryItemContainer = styled.div`
-
-text-align: center;
+  text-align: center;
   font-size: 18px;
   background: #fff;
   width: 5rem;
@@ -31,10 +21,9 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
-
-export const Image = styled(Image)`
+export const Imagecategory = styled(Image)`
   display: block;
   width: 100%;
   height: 100%;
