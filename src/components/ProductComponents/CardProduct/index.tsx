@@ -6,7 +6,7 @@ import { Product } from "@/types/woocommerce"
 
 import * as Style from "./styles"
 
-export function CardProduct({ product }) {
+export function CardProduct({ product }: { product: Product }) {
   return (
     <Style.CardProductContainer>
       <Style.ImageProduct
