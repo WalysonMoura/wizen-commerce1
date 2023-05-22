@@ -1,16 +1,16 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { Categories } from "@/components/Home/Categories"
-import { BestSellers } from "@/components/Home/Sections/BestSellers"
-import { PersonalizedOffers } from "@/components/Home/Sections/PersonalizedOffers"
-import { Promotions } from "@/components/Home/Sections/Promotions"
-import { StoreNews } from "@/components/Home/Sections/StoreNews"
-import { Video } from "@/components/Home/Video"
-import SliderBanners from "@/components/Home/sliderBanners"
-import * as Styles from "@/styles/pages/home"
+import { Categories } from "@/components/Home/Categories";
+import { BestSellers } from "@/components/Home/Sections/BestSellers";
+import { PersonalizedOffers } from "@/components/Home/Sections/PersonalizedOffers";
+import { Promotions } from "@/components/Home/Sections/Promotions";
+import { StoreNews } from "@/components/Home/Sections/StoreNews";
+import { Video } from "@/components/Home/Video";
+import SliderBanners from "@/components/Home/sliderBanners";
+import * as Styles from "@/styles/pages/home";
 
-import { buttonVariants } from "../components/ui/button"
-import { siteConfig } from "../config/site"
+import { buttonVariants } from "../components/ui/button";
+import { siteConfig } from "../config/site";
 
 export default function IndexPage() {
   return (
@@ -58,5 +58,5 @@ export default function IndexPage() {
         </Link>
       </div>
     </section>
-  )
+  );
 }
