@@ -21,10 +21,26 @@ export default function IndexPage() {
           into your apps. Free. Open Source. And Next.js 13 Ready.
         </p>
       </div>
-      <Video />
-      <ProductSlides />
 
-      <Style.AboutUs></Style.AboutUs>
+      <Style.Categories>
+        {categories.map((category, index) => (
+          <CategoryItem
+            key={index}
+            title={category.title}
+            link={category.href}
+            image={category.image}
+          />
+        ))}
+      </Style.Categories>
+      <Style.Sections>
+        <BestSellers />
+        <Promotions />
+        <StoreNews />
+        <PersonalizedOffers />
+      </Style.Sections>
+      <Style.AboutUs>
+        <Video />
+      </Style.AboutUs>
 
       <div className="flex gap-4">
         <Link
@@ -44,9 +60,7 @@ export default function IndexPage() {
         >
           GitHub
         </Link>
-        {
-          
-        }
+        {}
       </div>
     </section>
   );

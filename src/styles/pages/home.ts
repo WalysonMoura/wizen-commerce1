@@ -12,3 +12,6 @@ span{
 export const AboutUs = styled.section`
     
 `
+
+export const Categories = styled.section``
+export const Sections = styled.div``

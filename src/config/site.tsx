@@ -8,7 +8,17 @@ const categories = [
   {
     title: "Eletrônicos",
     href: "/",
-    image: "",
+    image: "/images/categories/eletrônicos.png",
+  },
+  {
+    title: "Pets",
+    href: "/",
+    image: "/images/categories/eletrônicos.png",
+  },
+  {
+    title: "Beleza",
+    href: "/",
+    image: "/images/categories/eletrônicos.png",
   },
 ];
 
