@@ -1,12 +1,15 @@
-"use client";
+"use client"
 
-import * as Style from "./styles";
-import { FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa"
+
+import { Product } from "@/types/woocommerce"
+
+import * as Style from "./styles"
 
 export function CardProduct({ product }) {
   return (
     <Style.CardProductContainer>
-      <Style.Image
+      <Style.ImageProduct
         src={`/images/products/caneca.jpg`}
         width={1000}
         height={1000}
@@ -15,7 +18,7 @@ export function CardProduct({ product }) {
       <Style.AddFavorites></Style.AddFavorites>
       <div>
         <Style.PriceContent>
-          <Style.Price>R$ 1.079,89</Style.Price>
+          <Style.PriceProduct>R$ 1.079,89</Style.PriceProduct>
         </Style.PriceContent>
 
         <Style.Stars>
@@ -32,5 +35,5 @@ export function CardProduct({ product }) {
       </div>
       <Style.AddCartButton>Adicionar ao Carrinho</Style.AddCartButton>
     </Style.CardProductContainer>
-  );
+  )
 }

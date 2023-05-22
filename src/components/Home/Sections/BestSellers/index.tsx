@@ -1,3 +1,4 @@
+import { ProductsCarousel } from "@/components/ProductComponents/ProductsCarousel";
 import * as Style from "./styles";
 
 export function BestSellers() {
