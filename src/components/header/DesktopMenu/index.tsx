@@ -74,7 +74,7 @@ export function DesktopMenu() {
 
   return (
     <>
-      <NavigationMenu className="bg-[#051932]">
+      <NavigationMenu>
         <NavigationMenuList>
           <Link href="/" className="hidden items-center space-x-2 md:flex">
             <Icons.fullLogo className="h-10 " />

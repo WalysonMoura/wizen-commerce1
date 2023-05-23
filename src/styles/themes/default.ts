@@ -5,6 +5,11 @@ export const defaultTheme = {
       white: "#f8f8f8",
       darkBlue: "#051932",
     },
+    background: {
+      header: "#051932",
+      page: "hsl(0 0% 100%)",
+    },
+    header: "",
     colorDefaultMenuIcon: "rgba(57, 57, 57, 0.87)",
     colorActiveMenuIcon: "#028cb8",
 
@@ -20,7 +25,6 @@ export const defaultTheme = {
 
     shadow900: "hsla(174,63%, 15%, 0.15)",
 
-    background: "hsl(0 0% 100%)",
     porcelain: "#f9fbfb",
     cerulean: "#049bd3",
     woodsmoke: "#0c0d0e",

@@ -1,13 +1,12 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   position: sticky;
   top: 0;
   z-index: 40;
   width: 100%;
-  border-bottom: 1px solid;
-  background-color: ${({ theme }) => theme.colors.background};
-`
+  background-color: ${({ theme }) => theme.colors.background.header};
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -20,7 +19,7 @@ export const Container = styled.div`
     justify-content: flex-start;
     gap: 0;
   }
-`
+`;
 
 export const FlexContainer = styled.div`
   display: flex;
@@ -28,4 +27,4 @@ export const FlexContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
-`
+`;
