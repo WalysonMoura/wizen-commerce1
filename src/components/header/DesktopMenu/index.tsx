@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import * as Style from "./styles"
+import * as React from "react";
+import Link from "next/link";
+import * as Style from "./styles";
 //import { getPublishedBlogPosts } from "@/services/notion"
 //import { useQuery } from "react-query"
 
 //import { BlogPost } from "@/types/blogPost"
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-import { Icons } from "../../icons"
+import { Icons } from "../../icons";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -18,13 +18,13 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "../../ui/navigation-menu"
+} from "../../ui/navigation-menu";
 
-import { BlogPost } from "@/types/blogPost"
-import { getSingleBlogPost } from "@/services/notion"
+import { BlogPost } from "@/types/blogPost";
+import { getSingleBlogPost } from "@/services/notion";
 
-import { siteConfig } from "@/config/site"
-import { MainNav } from "../main-nav"
+import { siteConfig } from "@/config/site";
+import { MainNav } from "../main-nav";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -62,10 +62,9 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
-]
+];
 
 export function DesktopMenu() {
-
   // @ts-ignore
   //const posts = await getSingleBlogPost(context.params?.slug)
 
@@ -77,7 +76,33 @@ export function DesktopMenu() {
     <>
       <NavigationMenu>
         <NavigationMenuList>
-          <MainNav items={siteConfig.mainNav} />
+          {siteConfig.mainNav?.length ? (
+            <>
+              {siteConfig.mainNav?.map(
+                (item, index) =>
+                  item.href && (
+                    <NavigationMenuItem key={index}>
+                      <Link href={item.href} legacyBehavior passHref>
+                        <NavigationMenuLink
+                          className={navigationMenuTriggerStyle()}
+                        >
+                          {item.title}
+                        </NavigationMenuLink>
+                      </Link>
+                    </NavigationMenuItem>
+                  )
+              )}
+            </>
+          ) : null}
+
+          <NavigationMenuItem>
+            <Link href="/docs" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Documentation
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
           <NavigationMenuItem>
             <NavigationMenuTrigger>Blog Wizen</NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -122,6 +147,7 @@ export function DesktopMenu() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
             <NavigationMenuTrigger>Components</NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -138,18 +164,10 @@ export function DesktopMenu() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/docs" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Documentation
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-
         </NavigationMenuList>
       </NavigationMenu>
     </>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -174,6 +192,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
