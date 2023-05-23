@@ -1,6 +1,6 @@
 "use client";
 import * as Style from "./styles";
-import { MdPix } from 'react-icons/fa';
+import { MdPix } from 'react-icons/md';
 
 export function InformationBar() {
   return (

@@ -9,7 +9,8 @@ import * as Styles from "./styles";
 //import { BlogPost } from "@/types/blogPost"
 import { cn } from "@/lib/utils";
 
-import { MdAccountCircle } from "react-icons/fa";
+import { MdAccountCircle } from "react-icons/md";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import {
   NavigationMenu,
   NavigationMenuContent,
