@@ -25,6 +25,7 @@ export function Header() {
 
   */
   return (
+    
     <>
       <Style.HeaderContainer>
         <InformationBar />
