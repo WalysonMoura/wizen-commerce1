@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import * as Style from "./styles";
+import { getCurrentMonth } from "@/utils/getCurrentMonth";
 
 export function Promotions() {
   const currentMonth = getCurrentMonth();
