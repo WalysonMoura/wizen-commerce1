@@ -8,7 +8,7 @@ export const categories = [
   {
     title: "Eletrônicos",
     url: "/",
-    image: "/images/categories/eletrônicos.png",
+    image: "/images/categories/eletronicos.png",
   },
   {
     title: "Pets",
