@@ -13,12 +13,12 @@ export const categories = [
   {
     title: "Pets",
     url: "/",
-    image: "/images/categories/eletrônicos.png",
+    image: "/images/categories/eletronicos.png",
   },
   {
     title: "Beleza",
     url: "/",
-    image: "/images/categories/eletrônicos.png",
+    image: "/images/categories/eletronicos.png",
   },
 ];
 
