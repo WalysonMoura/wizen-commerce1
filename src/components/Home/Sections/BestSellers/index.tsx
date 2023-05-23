@@ -1,3 +1,5 @@
+"use client" 
+
 import { ProductsCarousel } from "@/components/ProductComponents/ProductsCarousel";
 import * as Style from "./styles";
 

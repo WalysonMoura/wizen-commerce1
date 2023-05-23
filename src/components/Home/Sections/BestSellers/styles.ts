@@ -1,3 +1,4 @@
+"use client";
 import { styled } from "styled-components";
 
-export const BestSellersContainer = styled.section``
+export const BestSellersContainer = styled.section``;
