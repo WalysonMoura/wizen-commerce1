@@ -75,7 +75,7 @@ export function DesktopMenu() {
   return (
     <>
       <NavigationMenu>
-        <Link href="/" className="hidden items-center space-x-2 md:flex">
+        <Link href="/" className="">
           <Icons.fullLogo className="h-10 " />
         </Link>
         <NavigationMenuList>
