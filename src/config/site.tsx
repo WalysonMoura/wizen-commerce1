@@ -53,6 +53,10 @@ export const siteConfig = {
       title: `Promoções de ${currentMonth}`,
       href: "/promo-do-mes",
     },
+    {
+      title: "Pegue seu Cupom🎁",
+      href: "/cupom",
+    },
   ],
   productCategories: categories,
   bottomNav: [
