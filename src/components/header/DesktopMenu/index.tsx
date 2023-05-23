@@ -74,11 +74,11 @@ export function DesktopMenu() {
 
   return (
     <>
-      <NavigationMenu>
-        <Link href="/" className="">
-          <Icons.fullLogo className="h-10 " />
-        </Link>
+      <NavigationMenu className="bg-[#051932]">
         <NavigationMenuList>
+          <Link href="/" className="hidden items-center space-x-2 md:flex">
+            <Icons.fullLogo className="h-10 " />
+          </Link>
           {siteConfig.mainNav?.length ? (
             <>
               {siteConfig.mainNav?.map(
