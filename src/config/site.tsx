@@ -50,10 +50,6 @@ export const siteConfig = {
       href: "/",
     },
     {
-      title: "blog",
-      href: "/",
-    },
-    {
       title: `Promoções de ${currentMonth}`,
       href: "/promo-do-mes",
     },
@@ -69,7 +65,7 @@ export const siteConfig = {
       href: "/carrinho",
     },
     {
-      title: "Cart",
+      title: "Carrinho",
       href: "/carrinho",
     },
     {
