@@ -12,7 +12,7 @@ export function ButtonWhatsapp() {
         phoneNumber="85987520858"
         statusMessage="Online"
         accountName="Walyson Moura"
-        buttonStyle={{ bottom: "5rem" }}
+        buttonStyle={{ bottom: "8rem", right: "3rem" }}
         style={{ height: "3rem", width: "3rem", position: "relative" }}
         chatMessage="Olá tudo bem 😊? Qualquer dúvida pode me chamar!"
         placeholder="Digite uma mensagem.."

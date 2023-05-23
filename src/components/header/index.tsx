@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import Link from "next/link"
+import Link from "next/link";
 
-import { siteConfig } from "@/config/site"
-import useIsMobile from "@/hooks/useIsMobile"
+import { siteConfig } from "@/config/site";
+import useIsMobile from "@/hooks/useIsMobile";
 
-import { BottomNavigation } from "../BottomNavigation"
-import { InformationBar } from "../InformationBar"
-import { DesktopMenu } from "./DesktopMenu"
-import { MobileMenu } from "./MobileMenu"
-import * as Style from "./styles"
+import { BottomNavigation } from "../BottomNavigation";
+import { InformationBar } from "../InformationBar";
+import { DesktopMenu } from "./DesktopMenu";
+import { MobileMenu } from "./MobileMenu";
+import * as Style from "./styles";
 
 export function Header() {
-  const isMobile = useIsMobile()
+  const isMobile = useIsMobile();
 
   /*
     {isMobile ? (
@@ -26,7 +26,6 @@ export function Header() {
   */
   return (
     <>
-      {isMobile && <BottomNavigation />}
       <Style.HeaderContainer>
         <InformationBar />
         <Style.Container>
@@ -35,6 +34,8 @@ export function Header() {
           </div>
         </Style.Container>
       </Style.HeaderContainer>
+      
+      {isMobile && <BottomNavigation />}
     </>
-  )
+  );
 }

@@ -1,15 +1,17 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
-import { BiHomeAlt, BiUser } from 'react-icons/bi';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { FiShoppingBag } from 'react-icons/fi';
-import { ActiveLink } from '../BottomNavigation/activeLink';
-import { buttonVariants } from '../ui/button';
+import { BiHomeAlt, BiUser } from "react-icons/bi";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FiShoppingBag } from "react-icons/fi";
+import { HiUser } from "react-icons/hi";
+
+import { ActiveLink } from "../BottomNavigation/activeLink";
+import { buttonVariants } from "../ui/button";
 
 const activeItemStyles = {
-  color: '$colorActiveMenuIcon',
+  color: "$colorActiveMenuIcon",
 };
 
 export function BottomNavigation() {
@@ -19,8 +21,8 @@ export function BottomNavigation() {
         <nav className="flex items-center justify-center gap-10">
           <div
             className={buttonVariants({
-              size: 'sm',
-              variant: 'ghost',
+              size: "sm",
+              variant: "ghost",
             })}
           >
             <ActiveLink href="#">
@@ -31,8 +33,8 @@ export function BottomNavigation() {
 
           <div
             className={buttonVariants({
-              size: 'sm',
-              variant: 'ghost',
+              size: "sm",
+              variant: "ghost",
             })}
           >
             <ActiveLink href="#">
@@ -43,8 +45,20 @@ export function BottomNavigation() {
 
           <div
             className={buttonVariants({
-              size: 'sm',
-              variant: 'ghost',
+              size: "sm",
+              variant: "ghost",
+            })}
+          >
+            <ActiveLink href="#">
+              <AiOutlineShoppingCart size={30} />
+              <span className="sr-only">Carrinho</span>
+            </ActiveLink>
+          </div>
+
+          <div
+            className={buttonVariants({
+              size: "sm",
+              variant: "ghost",
             })}
           >
             <ActiveLink href="#">
