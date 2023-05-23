@@ -2,6 +2,8 @@
 import * as Style from "./styles";
 import { getCurrentMonth } from "@/utils/getCurrentMonth";
 
+import { ProductsCarousel } from "@/components/ProductComponents/ProductsCarousel";
+
 export function Promotions() {
   const currentMonth = getCurrentMonth();
 
