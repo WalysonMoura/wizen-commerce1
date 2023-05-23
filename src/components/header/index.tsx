@@ -25,7 +25,6 @@ export function Header() {
 
   */
   return (
-    
     <>
       <Style.HeaderContainer>
         <InformationBar />
@@ -35,7 +34,7 @@ export function Header() {
           </div>
         </Style.Container>
       </Style.HeaderContainer>
-      
+
       {isMobile && <BottomNavigation />}
     </>
   );

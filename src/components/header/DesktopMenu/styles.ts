@@ -1,5 +1,13 @@
 import { styled } from "styled-components";
 
+export const DesktopMenuContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+`;
+export const Tracking = styled.div``
+export const Account = styled.div``
 
 export const WizenPrimeLink = styled.a`
   display: flex;
@@ -27,5 +35,4 @@ export const WizenPrimeLink = styled.a`
   &:focus {
     box-shadow: 0 0 0.375rem rgba(0, 0, 0, 0.2);
   }
-`
-
+`;

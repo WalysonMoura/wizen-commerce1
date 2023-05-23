@@ -7,6 +7,7 @@ export const defaultTheme = {
     },
     background: {
       header: "#051932",
+      informationBar: "#009ED0",
       page: "hsl(0 0% 100%)",
     },
     header: "",
