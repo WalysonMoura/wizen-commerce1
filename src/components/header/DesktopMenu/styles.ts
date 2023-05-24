@@ -10,7 +10,8 @@ export const Tracking = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;`;
-export const Account = styled.div`7 display: flex;
+export const Account = styled.div`
+ display: flex;
 align-items: center;
 justify-content: space-between;
 strog{
