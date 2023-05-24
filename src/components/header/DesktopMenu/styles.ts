@@ -6,8 +6,13 @@ export const DesktopMenuContainer = styled.div`
     justify-content: space-between;
 
 `;
-export const Tracking = styled.div``
-export const Account = styled.div``
+export const Tracking = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;`;
+export const Account = styled.div`7 display: flex;
+align-items: center;
+justify-content: space-between;`;
 
 export const WizenPrimeLink = styled.a`
   display: flex;
