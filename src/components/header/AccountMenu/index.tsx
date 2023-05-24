@@ -1,15 +1,15 @@
-import { Settings2 } from "lucide-react"
+import { Settings2 } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/components/ui/popover";
 
- export function AccountMenu() {
+export function AccountMenu() {
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -18,6 +18,7 @@ import {
           <span className="sr-only">Open popover</span>
         </Button>
       </PopoverTrigger>
+      
       <PopoverContent className="w-80">
         <div className="grid gap-4">
           <div className="space-y-2">
@@ -63,5 +64,5 @@ import {
         </div>
       </PopoverContent>
     </Popover>
-  )
+  );
 }
