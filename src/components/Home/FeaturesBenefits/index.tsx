@@ -24,11 +24,13 @@ const renderIcon = (icon) => {
 };
 
  {renderIcon(item.icon)}
-*/
 
-import { RiTruckLine } from "react-icon/ri";
+ import { RiTruckLine } from "react-icon/ri";
 import { AiOutlineShoppingCart } from "react-icon/ai";
 import { IoIosHeart  } from "react-icon/io";
+*/
+
+
 
 export function FeaturesBenefits() {
   const isMobile = useIsMobile();
@@ -52,7 +54,7 @@ export function FeaturesBenefits() {
           <Styles.Card>
             <Styles.Title>Frete Grátis</Styles.Title>
             <Styles.Description>Entrega para todo o Brasil.</Styles.Description>
-            <RiTruckLine />
+           
           </Styles.Card>
         </SwiperSlide>
 
@@ -62,7 +64,7 @@ export function FeaturesBenefits() {
             <Styles.Description>
               Opções de pagamento seguras e confiáveis.
             </Styles.Description>
-            <AiOutlineShoppingCart />
+            
           </Styles.Card>
         </SwiperSlide>
 
@@ -72,7 +74,7 @@ export function FeaturesBenefits() {
             <Styles.Description>
               Garantia de produtos de alta qualidade.
             </Styles.Description>
-            <IoIosHeart />
+            
           </Styles.Card>
         </SwiperSlide>
       </ContainerSlide>
