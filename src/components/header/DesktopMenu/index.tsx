@@ -7,31 +7,20 @@ import * as Styles from "./styles";
 //import { useQuery } from "react-query"
 
 //import { BlogPost } from "@/types/blogPost"
-import { cn } from "@/lib/utils";
+
 
 import { Icons } from "@/components/icons";
 import { MdAccountCircle } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "../../ui/navigation-menu";
-
 import { BlogPost } from "@/types/blogPost";
 import { getSingleBlogPost } from "@/services/notion";
 
-import { siteConfig } from "@/config/site";
-import { MainNav } from "../main-nav";
+import { MainNav } from "./mainNav";
 
 export function DesktopMenu() {
   return (
-    <Styles.DesktopMenuContainer>
+    <Styles.Container>
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <Icons.fullLogo className="h-10 " />
       </Link>
@@ -59,6 +48,6 @@ export function DesktopMenu() {
           </h3>
         </div>
       </Styles.Account>
-    </Styles.DesktopMenuContainer>
+    </Styles.Container>
   );
 }

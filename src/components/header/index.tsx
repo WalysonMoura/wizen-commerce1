@@ -28,9 +28,7 @@ export function Header() {
     <>
       <Style.HeaderContainer>
         <InformationBar />
-        <Style.Container>
-          {isMobile ? <MobileMenu /> : <DesktopMenu />}
-        </Style.Container>
+        {isMobile ? <MobileMenu /> : <DesktopMenu />}
       </Style.HeaderContainer>
 
       {isMobile && <BottomNavigation />}
