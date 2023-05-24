@@ -7,7 +7,7 @@ export function BestSellers() {
   return (
     <Style.BestSellersContainer>
       <h2>Mais vendidos</h2>
-      <ProductsCarousel />
+      <ProductsCarousel products={[]} />
     </Style.BestSellersContainer>
   );
 }
