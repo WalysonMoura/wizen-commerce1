@@ -1,26 +1,27 @@
-"use client";
+"use client"
 
-import Link from 'next/link'
-import { Settings2 } from "lucide-react";
-import { BiMenuAltLeft } from "react-icons/bi";
+import Link from "next/link"
+import { Settings2 } from "lucide-react"
+import { BiMenuAltLeft } from "react-icons/bi"
+import { FaMapMarkerAlt } from "react-icons/fa"
+import { MdAccountCircle } from "react-icons/md"
 
-import * as Styles from "./styles";
-
-import { siteConfig } from "@/config/site";
-import useIsMobile from "@/hooks/useIsMobile";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { siteConfig } from "@/config/site"
+import useIsMobile from "@/hooks/useIsMobile"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/components/ui/popover"
+import { Icons } from "@/components/icons"
 
-import { MainNav } from "../main-nav";
+import * as Styles from "./styles"
 
 export function MobileMenu() {
-  const isMobile = useIsMobile();
+  const isMobile = useIsMobile()
   return (
     <Styles.MobileMenuContainer>
       <Link href="/" className="hidden items-center space-x-2 md:flex">
@@ -51,5 +52,5 @@ export function MobileMenu() {
         </div>
       </Styles.Account>
     </Styles.MobileMenuContainer>
-  );
+  )
 }

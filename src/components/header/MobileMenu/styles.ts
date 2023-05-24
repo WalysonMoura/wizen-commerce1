@@ -5,6 +5,9 @@ import { styled } from "styled-components";
 export const HamburgerButton = styled.input.attrs({ type: "checkbox" })`
  display: none;
 `;
+export const MobileMenuContainer = styled.div``
+export const Tracking = styled.div``
+export const Account = styled.div``
 
 export const Toggle = styled.label`
   position: relative;

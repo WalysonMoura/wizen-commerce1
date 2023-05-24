@@ -16,7 +16,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-import { MainNav } from "../main-nav";
 
 export function MobileMenuNav() {
 
@@ -44,7 +43,7 @@ export function MobileMenuNav() {
               <p className="text-sm text-muted-foreground">
                 Set the dimensions for the layer.
               </p>
-              <MainNav items={siteConfig.mainNav} />
+             
             </div>
 
             <div className="space-y-2">
