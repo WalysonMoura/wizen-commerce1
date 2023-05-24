@@ -29,9 +29,7 @@ export function Header() {
       <Style.HeaderContainer>
         <InformationBar />
         <Style.Container>
-          <div className="flex flex-1 items-center justify-end space-x-4">
-            {isMobile ? <MobileMenu /> : <DesktopMenu />}
-          </div>
+          {isMobile ? <MobileMenu /> : <DesktopMenu />}
         </Style.Container>
       </Style.HeaderContainer>
 

@@ -10,7 +10,9 @@ width: 100%;
 export const Tracking = styled.div`
 display: flex;
 align-items: center;
-justify-content: space-between;`;
+justify-content: space-between;
+`;
+
 export const Account = styled.div`
  display: flex;
 align-items: center;

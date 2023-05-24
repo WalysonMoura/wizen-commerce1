@@ -5,11 +5,16 @@ export const HeaderContainer = styled.header`
   top: 0;
   z-index: 40;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.background.header};
+
 `;
 
 export const Container = styled.div`
-  display: flex;
+background-color: ${({ theme }) => theme.colors.background.header};
+
+`;
+
+/*
+ display: flex;
   height: 4rem;
   align-items: center;
   gap: 1rem;
@@ -19,12 +24,5 @@ export const Container = styled.div`
     justify-content: flex-start;
     gap: 0;
   }
-`;
 
-export const FlexContainer = styled.div`
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
-`;
+*/
