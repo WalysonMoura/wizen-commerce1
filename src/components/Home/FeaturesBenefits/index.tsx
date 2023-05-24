@@ -1,5 +1,5 @@
-import * as Style from "./styles";
-import { featuresBenefitsData } from "@/config/site";
+import * as Styles from "./styles";
+
 import useIsMobile from "@/hooks/useIsMobile";
 
 // Import Swiper React components
@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Navigation, Pagination } from "swiper";
-
+/*
 const renderIcon = (icon) => {
   switch (icon) {
     case "RiTruckLine":
@@ -21,50 +21,80 @@ const renderIcon = (icon) => {
   }
 };
 
+ {renderIcon(item.icon)}
+*/
 export function FeaturesBenefits() {
   const isMobile = useIsMobile();
 
   if (isMobile) {
     return (
-      <Style.FeaturesBenefitsContainer>
-        <Swiper
-          spaceBetween={20}
-          slidesPerView={1}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Autoplay]}
-        >
-          {featuresBenefitsData.map((featureBenefit, index) => (
-            <SwiperSlide key={index}>
-              <Style.Card>
-                {renderIcon(item.icon)}
-                <Style.Title>{featureBenefit.title}</Style.Title>
-                <Style.Description>
-                  {featureBenefit.description}
-                </Style.Description>
-              </Style.Card>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </Style.FeaturesBenefitsContainer>
+      <ContainerSlide
+        spaceBetween={20}
+        slidesPerView={1}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay]}
+      >
+        <SwiperSlide>
+          <Styles.Card>
+            <Styles.Title>Frete Grátis</Styles.Title>
+            <Styles.Description>Entrega para todo o Brasil.</Styles.Description>
+            <RiTruckLine />
+          </Styles.Card>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Styles.Card>
+            <Styles.Title>Pagamento Seguro</Styles.Title>
+            <Styles.Description>
+              Opções de pagamento seguras e confiáveis.
+            </Styles.Description>
+            <AiOutlineShoppingCart />
+          </Styles.Card>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Styles.Card>
+            <Styles.Title>Produtos de Qualidade</Styles.Title>
+            <Styles.Description>
+              Garantia de produtos de alta qualidade.
+            </Styles.Description>
+            <IoIosHeart />
+          </Styles.Card>
+        </SwiperSlide>
+      </ContainerSlide>
     );
   }
 
   return (
-    <Style.FeaturesBenefitsContainer>
-      {featuresBenefitsData.map((featureBenefit, index) => (
-        <Style.Card key={index}>
-          {renderIcon(item.icon)}
-          <Style.Title>{featureBenefit.title}</Style.Title>
-          <Style.Description>{featureBenefit.description}</Style.Description>
-        </Style.Card>
-      ))}
-    </Style.FeaturesBenefitsContainer>
+    <Styles.Container>
+      <Styles.Card>
+        <Styles.Title>Frete Grátis</Styles.Title>
+        <Styles.Description>Entrega para todo o Brasil</Styles.Description>
+        <RiTruckLine />
+      </Styles.Card>
+
+      <Styles.Card>
+        <Styles.Title>Pagamento Seguro</Styles.Title>
+        <Styles.Description>
+          Opções de pagamento seguras e confiáveis
+        </Styles.Description>
+        <AiOutlineShoppingCart />
+      </Styles.Card>
+
+      <Styles.Card>
+        <Styles.Title>Produtos de Qualidade</Styles.Title>
+        <Styles.Description>
+          Garantia de produtos de alta qualidade
+        </Styles.Description>
+        <IoIosHeart />
+      </Styles.Card>
+    </Styles.Container>
   );
 }

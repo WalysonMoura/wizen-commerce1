@@ -22,24 +22,6 @@ export const categories = [
   },
 ];
 
-export const featuresBenefitsData = [
-  {
-    title: "Frete Grátis",
-    description: "Entrega gratuita para todo o Brasil.",
-    icon: "RiTruckLine",
-  },
-  {
-    title: "Pagamento Seguro",
-    description: "Opções de pagamento seguras e confiáveis.",
-    icon: "AiOutlineShoppingCart",
-  },
-  {
-    title: "Produtos de Qualidade",
-    description: "Garantia de produtos de alta qualidade.",
-    icon: "IoIosHeart",
-  },
-];
-
 export const siteConfig = {
   name: "Wizen Shop",
   description:

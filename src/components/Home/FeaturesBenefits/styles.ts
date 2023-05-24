@@ -1,7 +1,14 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+export const Container = styled.section`
+display: flex;
+    align-items: center;
+    gap: 2rem;
+  `;
+export const ContainerSlide = styled(Swiper)`
 
-export const FeaturesBenefitsContainer = styled.section``
-export const Card = styled.div``
-export const Title = styled.h3``
-export const Description = styled.p``
+   `;
+export const Card = styled.div``;
+export const Title = styled.h3``;
+export const Description = styled.p``;

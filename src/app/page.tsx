@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Categories } from "@/components/Home/Categories";
+import { FeaturesBenefits } from "@/components/Home/FeaturesBenefits";
 import { BestSellers } from "@/components/Home/Sections/BestSellers";
 import { PersonalizedOffers } from "@/components/Home/Sections/PersonalizedOffers";
 import { Promotions } from "@/components/Home/Sections/Promotions";
@@ -26,7 +27,7 @@ export default function IndexPage() {
           into your apps. Free. Open Source. And Next.js 13 Ready.
         </p>
       </div>
-
+      <FeaturesBenefits />
       <Categories />
       <div>
         <BestSellers />
