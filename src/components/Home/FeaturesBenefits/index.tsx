@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import * as Styles from "./styles";
 
@@ -25,6 +25,11 @@ const renderIcon = (icon) => {
 
  {renderIcon(item.icon)}
 */
+
+import { RiTruckLine } from "react-icon/ri";
+import { AiOutlineShoppingCart } from "react-icon/ai";
+import { IoIosHeart  } from "react-icon/io";
+
 export function FeaturesBenefits() {
   const isMobile = useIsMobile();
 
