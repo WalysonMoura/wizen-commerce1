@@ -3,7 +3,7 @@
 import { Settings2 } from "lucide-react";
 import { BiMenuAltLeft } from "react-icons/bi";
 
-import * as Style from "./styles";
+import * as Styles from "./styles";
 
 import { siteConfig } from "@/config/site";
 import useIsMobile from "@/hooks/useIsMobile";
