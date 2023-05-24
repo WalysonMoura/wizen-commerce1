@@ -86,7 +86,7 @@ export function FeaturesBenefits() {
       <Styles.Card>
         <Styles.Title>Frete Grátis</Styles.Title>
         <Styles.Description>Entrega para todo o Brasil</Styles.Description>
-        <RiTruckLine />
+       
       </Styles.Card>
 
       <Styles.Card>
@@ -94,7 +94,7 @@ export function FeaturesBenefits() {
         <Styles.Description>
           Opções de pagamento seguras e confiáveis
         </Styles.Description>
-        <AiOutlineShoppingCart />
+       
       </Styles.Card>
 
       <Styles.Card>
@@ -102,7 +102,7 @@ export function FeaturesBenefits() {
         <Styles.Description>
           Garantia de produtos de alta qualidade
         </Styles.Description>
-        <IoIosHeart />
+        
       </Styles.Card>
     </Styles.Container>
   );
