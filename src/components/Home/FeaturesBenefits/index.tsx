@@ -1,3 +1,5 @@
+"use client"
+
 import * as Styles from "./styles";
 
 import useIsMobile from "@/hooks/useIsMobile";
