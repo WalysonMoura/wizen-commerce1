@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link'
 import { Settings2 } from "lucide-react";
 import { BiMenuAltLeft } from "react-icons/bi";
 
