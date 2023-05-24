@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "styled-components";
 
 export const HamburgerButton = styled.input.attrs({ type: "checkbox" })`
