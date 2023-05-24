@@ -10,15 +10,17 @@ width: 100%;
 export const Tracking = styled.div`
 display: flex;
 align-items: center;
-justify-content: space-between;
+gap: 2rem
 `;
 
 export const Account = styled.div`
  display: flex;
 align-items: center;
-justify-content: space-between;
-strog{
-  color:  ${({ theme }) => theme.colors.primary.lightBlue};
+gap: 2rem
+div{
+  strog{
+    color:  ${({ theme }) => theme.colors.primary.lightBlue};
+  }
 }
 `;
 
